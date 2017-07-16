@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<div id="container-client" class="container-client col-24">
+    <div class="titles-client row">
+        <span class="span-list col-13 col-offset-1">Client Data</span>
+        <span class="span-list col-6 col-offset-2">Clients</span>
+    </div>
+
+    <div class="row">
+        <button type="button" id="btnClean" class="btnClean col-offset-13">Clean</button>
+    </div>
+    <div class="row">
+
+        <div class="div-intern col-13 col-offset-1">
+            <label class="col-3 margin-form-inputs-client label" for="inputDni ">Dni</label>
+            <div class="">
+                <input type="text " class="col-21 input-class-client margin-form-inputs-client" id="inputDni" placeholder="Dni " value="">
+            </div>
+
+            <label class="col-3 margin-form-inputs-client label" for="inputName ">Name</label>
+            <div>
+                <input type="text" class="col-21 input-class-client margin-form-inputs-client" id="inputName" placeholder="Name and surname" value="">
+            </div>
+
+            <label class="col-3 margin-form-inputs-client label" for="inputAddress">Address</label>
+            <div>
+                <input type="text" class="col-21 input-class-client margin-form-inputs-client" id="inputAddress" placeholder="Address " value="">
+            </div>
+
+            <label class="col-3 margin-form-inputs-client label" for="inputPhone">Phone</label>
+            <div>
+                <input type="text" class="col-21 input-class-client margin-form-inputs-client" id="inputPhone" placeholder="Phone " value="">
+            </div>
+
+            <label class="col-3 margin-form-inputs-client label" for="inputEndorsed">Endorsed</label>
+            <div>
+                <select class="col-21 input-class-client margin-form-inputs-client select" id="inputEndorsed">
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="col-3">
+                    <button type="button" id="btnSaveClient" class="btn col-24">Save</button>
+                </div>
+                <div class="col-3">
+                    <button type="button" id="btnUpdateClient" class="btn col-24 col-offset-2">Upate</button>
+                </div>
+                <div class="col-9 col-offset-2 div-message">
+                    <span id="showMessage"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-7 col-offset-2 div-intern">
+            <div id="divClientList">
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<div id="container-booking" class="container-booking col-24">
+    <div class="titles-client row">
+        <span class="span-list col-14">New Booking</span>
+        <span class="span-list col-9 col-offset-1">Select Booking</span>
+    </div>
+
+    <div class="row">
+        <span id="spanDateBooking" class="col-4">Date</span>
+        <button type="button" id="btnClean" class="btnClean col-1 col-offset-9">Clean</button>
+    </div>
+
+    <div class="row">
+
+        <div class="div-intern col-14">
+            <label class="col-3 margin-form-inputs label" for="inputDateStart">Date Start</label>
+            <div>
+                <input type="text " class="col-8 input-class-booking margin-form-inputs" id="inputDateStart" placeholder="0000-00-00 00:00:00" value="">
+            </div>
+
+            <label class="col-3 margin-form-inputs label" for="inputDateEnd">Date End</label>
+            <div>
+                <input type="text" class="col-8 input-class-booking margin-form-inputs" id="inputDateEnd" disabled>
+            </div>
+
+            <label class="col-3 margin-form-inputs label" for="inputNumberPlate">Nº Plate</label>
+            <div>
+                <select class="col-8 input-class-booking margin-form-inputs select" id="inputNumberPlate">
+                    <option value="select car">select car</option>
+                </select>
+            </div>
+
+            <label class="col-3 margin-form-inputs label" for="inputGasoline">Gasoline</label>
+            <div>
+                <input type="text" class="col-8 input-class-booking margin-form-inputs" id="inputGasoline" placeholder="liters" value="">
+            </div>
+            <div class="row col-24 col-offset-6">
+                <label class="col-8 margin-form-inputs label-radio" for="inputDelivered">
+                    <input type="radio" name="status" value="delivered" id="inputDelivered">Delivered
+                </label>
+
+                <label class="col-8 margin-form-inputs label-radio" for="inputUndelivered">
+                    <input type="radio" name="status" value="undelivered" id="inputUndelivered" checked> Undelivered
+                </label>
+            </div>
+            <div class="row">
+                <label class="col-3 margin-form-inputs label" for="inputClient">Client</label>
+                <select class="col-8 input-class-booking margin-form-inputs select" id="inputClient">
+                    <option value="select client">select client</option>
+                </select>
+                <div class="col-9 col-offset-2 div-message">
+                    <span id="showMessage"></span>
+                </div>
+            </div>
+
+
+            <div class="row col-24 row-data">
+                <div id="divDataClient" class="col-11">
+                    <fieldset>
+                        <legend>Client Data</legend>
+                        <div class="col-24"><label for="spanNamePerson" class="col-8 spanData labelData">Name</label>
+                            <span id="spanNamePerson" class="col-16 spanData"></span></div>
+                        <div class="col-24"><label for="spanDniPerson" class="col-8 spanData labelData">DNI</label>
+                            <span id="spanDniPerson" class="col-16 spanData"></span></div>
+                        <div class="col-24"><label for="spanAddress" class="col-8 spanData labelData">Address</label>
+                            <span id="spanAddress" class="col-16 spanData"></span></div>
+                        <div class="col-24"><label for="spanPhone" class="col-8 spanData labelData">Phone</label>
+                            <span id="spanPhone" class="col-16 spanData"></span></div>
+                    </fieldset>
+                </div>
+                <div id="divDataCar" class="col-11 col-offset-2">
+                    <fieldset>
+                        <legend>Car Data</legend>
+                        <div class="col-24"><label for="spanBrand" class="col-8 spanData labelData">Brand</label>
+                            <span id="spanBrand" class="col-16 spanData"></span></div>
+                        <div class="col-24"><label for="spanModel" class="col-8 spanData labelData">Model</label>
+                            <span id="spanModel" class="col-16 spanData"></span></div>
+                        <div class="col-24"><label for="spanColor" class="col-8 spanData labelData">Color</label>
+                            <span id="spanColor" class="col-16 spanData"></span></div>
+                        <div class="col-24"><label for="spanPriceByDay" class="col-8 spanData labelData">Price (day)</label>
+                            <span id="spanPriceByDay" class="col-16 spanData"></span></div>
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="col-3 margin-form-inputs label" for="inputTotalDays">Total Days</label>
+                <div>
+                    <input type="number" class="col-5 input-class-booking margin-form-inputs" id="inputTotalDays" placeholder="" value="">
+                </div>
+                <button type="button" id="btnTotalPrice" class="btnClean col-3 col-offset-1">Total price</button>
+                <div>
+                    <input type="text" class="col-5 input-class-booking margin-form-inputs col-offset-1" id="inputTotalPrice" placeholder="" value="">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <button type="button" id="btnSaveBooking" class="btn col-24">Save</button>
+                </div>
+                <div class="col-2">
+                    <button type="button" id="btnUpdateBooking" class="btn col-24 col-offset-2">Upate</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-9 col-offset-1 div-intern">
+            <div id="divBookingList">
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>

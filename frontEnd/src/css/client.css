@@ -1,0 +1,80 @@
+.container-client {
+    overflow: hidden;
+    padding: 1% 1%;
+    margin-top: 2%;
+}
+
+.span-list {
+    color: #fff;
+    background-color: #337ab7;
+    border-radius: 2px;
+    padding: 7px 10px;
+    padding-right: 25%;
+    margin-bottom: 10px;
+}
+
+.div-intern {
+    margin-top: 2%;
+}
+
+.label {
+    margin-top: 7px;
+}
+
+.margin-form-inputs-client {
+    margin-bottom: 20px;
+}
+
+.input-class-client {
+    border: 1px solid #d3d1d1;
+    color: #5e5e5e;
+    border-radius: 3px;
+    padding: 7px 10px;
+    font-size: 0.9em;
+}
+
+.select {
+    background-color: #fff;
+}
+
+.p-clients {
+    padding: 2% 2%;
+    cursor: pointer;
+}
+
+.p-clients:hover {
+    background-color: #dfdfdf;
+}
+
+.status {
+    color: #337ab7;
+    font-weight: bold;
+}
+
+.div-message {
+    margin-top: 12px;
+    color: #de0909;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.btnClean {
+    background-color: #cddee6;
+    color: white;
+    display: block;
+    background-color: #337ab7;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1em;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btnClean:hover {
+    background-color: #064e8c;
+}
+
+#divClientList {
+    margin-top: -40px;
+}
